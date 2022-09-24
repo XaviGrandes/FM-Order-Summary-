@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Red Hat Display', sans-serif; */
+
+:root {
+/* ### Primary */
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+/* ### Neutral */
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    Box-sizing: border-box
+}
+
+body{
+    background-color: var(--desaturated-blue);
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 1rem;
+}
+
+.container {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1rem;
+    max-width: 400px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0px 0px ;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin-top: 1rem;
+}
+
+p {
+    color: var(--desaturated-blue);
+    margin: 1rem 1.5rem;
+}
+
+.price {
+    margin: 0;
+}
+
+.box-plan {
+    background-color: rgb(179, 179, 214);
+    border-radius: 1rem;
+    margin: 1rem 1.5em;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.box-plan img {
+    width: 15%;
+}
+
+.annual-plan {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem 0 1.5rem;
+}
+
+.plan {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+button {
+    padding: 10px;
+    margin: 0.5rem 1.5rem;
+}
+
+.change {
+    color: var(--dark-blue);
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.change:hover {
+    color: var(--bright-blue)
+}
+
+.pay {
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    box-shadow: 2px 2px 20px 2px rgb(183, 156, 207);
+}
+
+.pay:hover {
+    background-color: var(--desaturated-blue);
+    transition: background-color 0.25s;
+}
+
+.cancel {
+    background-color: var(--very-pale-blue);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--desaturated-blue);
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+}
